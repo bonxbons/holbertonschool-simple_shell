@@ -21,7 +21,7 @@ void prompt(void)
  */
 char **read_input(char *str)
 {
-        char *token, **holder;
+	char *token, **holder;
 	unsigned int length;
 	int i = 0;
 
@@ -34,7 +34,7 @@ char **read_input(char *str)
 		return (NULL);
 	token = strtok(str, " ");
 	while (token != NULL)
-	{       
+	{      
 		holder[i] = malloc(_strlen(token) + 1);
 		if (holder[i] == NULL)
 		{
