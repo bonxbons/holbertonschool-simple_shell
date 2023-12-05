@@ -23,4 +23,6 @@ void free_parent(char *buffer, char **commands);
 char *_getenv(const char *name, char **env);
 unsigned int _strlen_const(const char *str);
 char *_strncpyconst(char *dest, const char *src, int n);
+void get_out(char *buffer, char **commands);
+void env_get(char *buffer, char **commands, char **env);
 #endif

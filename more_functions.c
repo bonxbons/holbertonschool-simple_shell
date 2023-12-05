@@ -24,9 +24,9 @@ void setfree(char *buffer, char **commands)
 	if (commands == NULL)
 		setfree(buffer, commands);
 	else if (strcmp("exit", commands[0]))
-		getopt(buffer, commands);
+		get_out(buffer, commands);
 	else
-		parentfree(buffer, commands);
+		free_parent(buffer, commands);
 }
 
 /**
