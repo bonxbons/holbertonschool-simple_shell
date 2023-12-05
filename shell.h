@@ -7,6 +7,9 @@
 #include <string.h>
 #include <stddef.h>
 #include <stdarg.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
 void prompt(void);
 char **read_input(char *str);
@@ -25,4 +28,5 @@ unsigned int _strlen_const(const char *str);
 char *_strncpyconst(char *dest, const char *src, int n);
 void get_out(char *buffer, char **commands);
 void env_get(char *buffer, char **commands, char **env);
+unsigned int command_length(char *string);
 #endif

@@ -41,7 +41,7 @@ char **read_input(char *str)
 			freearv(holder);
 			return (NULL);
 		}
-		_strncpy(holder[i], token, _strlen(token) + 1);
+		strncpy(holder[i], token, _strlen(token) + 1);
 		token = strtok(NULL, " ");
 		i++;
 	}
