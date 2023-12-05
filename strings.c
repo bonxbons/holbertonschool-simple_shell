@@ -53,3 +53,19 @@ char *_strncpyconst(char *dest, const char *src, int n)
 
 	return (dest);
 }
+
+/**
+ * _strlen_const - a function to find the length of a constant string
+ * @str: string to calculate the length
+ * return: the length of the string
+ */
+unsigned int _strlen_const(const char *str)
+{
+	unsigned int i = 0;
+
+	while (str[i] != '\0')
+		i++;
+
+	return (i);
+
+}
