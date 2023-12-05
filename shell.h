@@ -11,11 +11,12 @@
 void prompt(void);
 char **read_input(char *str);
 void execute(char **commands, char *buffer, char **env, char **argv, int count);
-
-
+void freearv(char **arv);
+void setfree(char *buffer, char **commands);
 char *strup(char *str);
 int countstr(char *str);
 int strcmp(const char *s1, const char *s2);
 char *strcat(char *type, char *src);
 int strlen(char *s);
+
 #endif
