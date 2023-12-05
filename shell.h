@@ -10,7 +10,8 @@
 
 void prompt(void);
 char **read_input(char *str);
-void execute(char **commands, char *buffer, char **env, char **argv, int count);
+void execute(char **commands, char *buffer, char **env,
+		char **argv, int count);
 void freearv(char **arv);
 void setfree(char *buffer, char **commands);
 char *strup(char *str);
@@ -20,5 +21,5 @@ char *strcat(char *type, char *src);
 int _strlen(char *s);
 int _putchar(char c);
 void free_parent(char *buffer, char **commands);
-char *_getenv(const char *name, char **env);
+char *_getenv(const char *name, char **env)i;
 #endif
