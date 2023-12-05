@@ -20,5 +20,5 @@ int _strcmp(const char *s1, const char *s2);
 int _strlen(char *s);
 int _putchar(char c);
 void free_parent(char *buffer, char **commands);
-char *_getenv(const char *name, char **env)i;
+char *_getenv(const char *name, char **env);
 #endif
