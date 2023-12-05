@@ -20,4 +20,5 @@ char *strcat(char *type, char *src);
 int _strlen(char *s);
 int _putchar(char c);
 void free_parent(char *buffer, char **commands);
+char *_getenv(const char *name, char **env);
 #endif
