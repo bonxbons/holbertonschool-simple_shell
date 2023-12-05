@@ -16,4 +16,19 @@ char *_getenv(const char *name, char **env)
 	if (name == NULL)
 		return (NULL);
 
-	_strncpyconst(name,
+	_strncpyconst(p_name, name, length);
+
+	ev_value = strtok(env[i], "=");
+	while (env[i])
+	{
+		if (_strcmp(ev_value, p_name))
+		{
+			free(p_name);
+			return (ev_value);
+		}
+		i++;
+		ev_value = strok (env[i], "=");
+	}
+	free(p_name);
+	return (NULL);
+}
