@@ -27,7 +27,7 @@ char *_getenv(const char *name, char **env)
 			return (ev_value);
 		}
 		i++;
-		ev_value = strok (env[i], "=");
+		ev_value = strtok(env[i], "=");
 	}
 	free(p_name);
 	return (NULL);

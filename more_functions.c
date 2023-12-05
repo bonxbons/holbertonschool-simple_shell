@@ -22,9 +22,9 @@ void freearv(char **arv)
 void setfree(char *buffer, char **commands)
 {
 	if (commands == NULL)
-		parentfree(buffer, commands);
+		setfree(buffer, commands);
 	else if (strcmp("exit", commands[0]))
-		getout(buffer, commands);
+		getopt(buffer, commands);
 	else
 		parentfree(buffer, commands);
 }
