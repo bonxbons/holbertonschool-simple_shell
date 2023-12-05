@@ -15,9 +15,9 @@ void freearv(char **arv);
 void setfree(char *buffer, char **commands);
 char *strup(char *str);
 int countstr(char *str);
-int strcmp(const char *s1, const char *s2);
+int _strcmp(const char *s1, const char *s2);
 char *strcat(char *type, char *src);
-int strlen(char *s);
+int _strlen(char *s);
 int _putchar(char c);
 void free_parent(char *buffer, char **commands);
 #endif
