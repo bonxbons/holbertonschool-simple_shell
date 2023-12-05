@@ -9,6 +9,8 @@
 #include <stdarg.h>
 
 void prompt(void);
+char **read_input(char *str);
+void execute(char **commands, char *buffer, char **env, char **argv, int count);
 
 
 char *strup(char *str);

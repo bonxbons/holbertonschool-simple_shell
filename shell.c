@@ -25,7 +25,7 @@ char **read_input(char *str)
 	unsigned int length;
 	int i = 0;
 
-	str[_strlen(str) - 1] = '\0'; /**replace the new line by null*/
+	str[_strlen(str) - 1] = '\0';
 	length = command_length(str);
 	if (length == 0)
 		return (NULL);
