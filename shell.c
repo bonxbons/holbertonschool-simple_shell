@@ -21,3 +21,30 @@ void prompt(void)
  */
 char **read_input(char *str)
 {
+        char *token, **holder;
+	unsigned int length;
+	int i = 0;
+
+	str[_strlen(str) - 1] = '\0'; /**replace the new line by null*/
+	length = command_length(str);
+	if (length == 0)
+		return (NULL);
+	holder = malloc((sizeof(char *) * (length + 1)));
+	if (holder == NULL)
+		return (NULL);
+	token = strtok(str, " ");
+	while (token != NULL)
+	{       
+		holder[i] = malloc(_strlen(token) + 1);
+		if (holder[i] == NULL)
+		{
+			freearv(holder);
+			return (NULL);
+		}
+		_strncpy(holder[i], token, _strlen(token) + 1);
+		token = strtok(NULL, " ");
+		i++;
+	}
+	holder[i] = NULL;
+	return (holder);
+}
