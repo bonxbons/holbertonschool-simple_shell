@@ -29,4 +29,6 @@ char *_strncpyconst(char *dest, const char *src, int n);
 void get_out(char *buffer, char **commands);
 void env_get(char *buffer, char **commands, char **env);
 unsigned int command_length(char *string);
+void null_command(char *buffer);
+void env_end(char *buffer, char **commands, char **env);
 #endif
