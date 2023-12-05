@@ -74,3 +74,14 @@ void execute(char **commands, char *buffer, char **env, char **argv, int count)
 	else
 		_path(commands, buffer, env, argv, count);
 }
+
+/**
+ * signal_handle - handles signals and writes the prompt
+ * @sign: signal to handle
+ * Return: void
+ */
+void signal_handle(int sign)
+{
+	(void)sign;
+	write(STDOUT_FILENO, "\n$ ", 3);
+}
