@@ -85,3 +85,25 @@ void signal_handle(int sign)
 	(void)sign;
 	write(STDOUT_FILENO, "\n$ ", 3);
 }
+
+/**
+ * main - entry point
+ * @argc: argument count
+ * @argv: array of arguments
+ * @env: pointer to the list of env variables
+ *
+ * Return: 0 on success or 1 if error
+ */
+int main(int __attribute__((unused)) argc, **argv, char **env)
+{
+	size_t len = 0;
+	ssize_t chars;
+	pid_t pid;
+	char **tokens, *line = NULL;
+	int i = 0, status;
+
+	(void)argc;
+	prompt();
+	for (; (chars = getline(&line, &len, stdin)); )
+	{
+		signal(
