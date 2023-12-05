@@ -106,11 +106,11 @@ int main(int __attribute__((unused)) argc, char **argv, char **env)
 	prompt();
 	for (; (chars = getline(&line, &len, stdin)); )
 	{
-		signal(SIGINT, signal_handler); 
+		signal(SIGINT, signal_handle); 
 		if (chars == EOF)
 			end_file(line);
 		i++;
-		tokens = parse_input(line);
+		tokens = read_input(line);
 		pid = fork();
 		if (pid == -1)
 			fork_fail();
