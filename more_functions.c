@@ -29,3 +29,14 @@ void setfree(char *buffer, char **commands)
 		parentfree(buffer, commands);
 }
 
+/**
+ * free_parent - free the buffer and commands
+ * @buffer: buffer in getline
+ * @commands: double pointer that will store commands inserted
+ * Return: nothing
+ */
+void free_parent(char *buffer, char **commands)
+{
+	free(buffer);
+	freearv(commands);
+}
