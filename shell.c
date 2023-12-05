@@ -94,7 +94,7 @@ void signal_handle(int sign)
  *
  * Return: 0 on success or 1 if error
  */
-int main(int __attribute__((unused)) argc, argv, char **env)
+int main(int __attribute__((unused)) argc, char **argv, char **env)
 {
 	size_t len = 0;
 	ssize_t chars;
