@@ -119,7 +119,7 @@ int main(int __attribute__((unused)) argc, char **argv, char **env)
 		else
 		{
 			wait(&status);
-			send_to_free(line, tokens);
+			setfree(line, tokens);
 		}
 		len = 0, line = NULL;
 		prompt();
