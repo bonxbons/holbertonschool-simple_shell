@@ -33,3 +33,23 @@ int _strcmp(const char *s1, const char *s2)
 	}
 	return (1);
 }
+
+/**
+ * _strncpyconst - function that copies a constant string to another
+ * @dest: destination of the string
+ *@src: string to copy
+ *@n: the length of the string
+ *Return: dest
+ */
+char *_strncpyconst(char *dest, const char *src, int n)
+{
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
+}
