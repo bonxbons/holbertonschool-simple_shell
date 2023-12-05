@@ -33,5 +33,5 @@ void null_command(char *buffer);
 void env_end(char *buffer, char **commands, char **env);
 void _path(char **commands, char *buffer, char **env, char **argv, int count);
 void signal_handle(int sign);
-int main(int __attribute__((unused)) argc, char **argv, char **env);
+int main(int __attribute__((unused)) argc, char argv, char **env);
 #endif
