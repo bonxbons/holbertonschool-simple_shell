@@ -8,6 +8,6 @@
 #include <stddef.h>
 #include <stdarg.h>
 
-int prompt(void);
+void prompt(void);
 
 #endif
