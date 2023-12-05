@@ -106,4 +106,25 @@ int main(int __attribute__((unused)) argc, char **argv, char **env)
 	prompt();
 	for (; (chars = getline(&line, &len, stdin)); )
 	{
-		signal(
+		signal(SIGINT, signal_handler); 
+		if (chars == EOF)
+			end_file(line);
+		i++;
+		tokens = parse_input(line);
+		pid = fork();
+		if (pid == -1)
+			fork_fail();
+		if (pid == 0)
+			execute(tokens, line, env, argv, i);
+		else
+		{
+			wait(&status);
+			send_to_free(line, tokens);
+		}
+		len = 0, line = NULL;
+		prompt();
+	}
+if (chars == -1)
+		return (EXIT_FAILURE);
+	return (EXIT_SUCCESS);
+}
