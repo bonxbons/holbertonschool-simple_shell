@@ -19,7 +19,7 @@ void freearv(char **arv);
 void setfree(char *buffer, char **commands);
 char *strup(char *str);
 int countstr(char *str);
-int _strcmp(const char *s1, const char *s2);
+int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
 int _putchar(char c);
 void free_parent(char *buffer, char **commands);

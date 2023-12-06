@@ -21,7 +21,7 @@ int _strlen(char *s)
  * @s2: second string to compare
  * Return: 1 for equal, or 0 if not
  */
-int _strcmp(const char *s1, const char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	unsigned int i = 0;
 
