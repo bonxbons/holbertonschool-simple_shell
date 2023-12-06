@@ -57,3 +57,16 @@ int _puterror(char c)
 {
 	return(write(STDERR_FILENO, &c, 1));
 }
+
+/**
+ * end_file - function to control the interrupt signal
+ * @buffer: buffer array created by new line
+ * return: nothing
+ */
+void end_file(char *buffer)
+{
+	if (isatty(STDIN_FILENO))
+		write(STDOUT_FILENO, "\n", 1);
+	free(buffer);
+	exit(0);
+}
