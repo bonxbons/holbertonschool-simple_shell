@@ -39,5 +39,9 @@ void end_file(char *buffer);
 void fork_fail(void);
 void build_message(char **av, char *first_com, int count);
 int _puterror(char c);
-
+unsigned int find_num(char *path);
+char store_e_variables(char *fir_com, char **environ);
+char *_getenv(const char *name, char **env);
+char *_strncpcommand(char *dest, char *src, char *command, int n, int c);
+void print_env(char **environ);
 #endif
