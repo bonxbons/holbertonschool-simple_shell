@@ -24,6 +24,50 @@ unsigned int find_num(char *path)
 }
 
 /**
+* store_e_variables - Function that create a double pointer array, where stores
+*each path directory as a pointer
+*@fir_com: first command inserted in the prompt
+*@environ: enviroment variables
+*Return: enviroment
+*/
+
+char **store_e_variables(char *fir_com, char **environ)
+{
+	char **directories, *path_env, *directory;
+	unsigned int length, i = 0;
+	int dir_length, command_length;
+
+	path_env = _getenv("PATH", environ);
+	length = find_num_dir(path_env);
+	directories = malloc(sizeof(char *) * (length + 1));
+	if (directories == NULL)
+		return (NULL);
+
+	directory = strtok(path_env, ":");
+
+	while (directory != NULL)
+	{
+		dir_length = _strlen(directory);
+		command_length = _strlen(fir_com);
+		directories[i] = malloc(sizeof(char *) *
+		(dir_length + command_length + 2));
+		if (directories[i] == NULL)
+		{
+			freearv(directories);
+			return (NULL);
+		}
+			_strncpcommand(directories[i], directory, fir_com,
+			dir_length, command_length);
+			i++;
+		directory = strtok(NULL, ":");
+	}
+
+		directories[i] = NULL;
+
+	return (directories);
+}
+
+/**
  * _getenv - function that will get the enviroment variable
  * @name: the name of the enviroment variable
  * @env: enviroment variable
