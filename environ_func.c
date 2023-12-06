@@ -38,7 +38,7 @@ char **store_e_variables(char *fir_com, char **environ)
 	int dir_length, command_length;
 
 	path_env = _getenv("PATH", environ);
-	length = find_num_dir(path_env);
+	length = find_num(path_env);
 	directories = malloc(sizeof(char *) * (length + 1));
 	if (directories == NULL)
 		return (NULL);

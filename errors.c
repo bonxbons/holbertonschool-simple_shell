@@ -45,7 +45,7 @@ void build_message(char **av, char *first_com, int count)
 	_puterror(count % 10 + '0');
 	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, first_com, _strlen(first_com));
-	wrtie(STDERR_FILENO, ": not found\n", 12);
+	write(STDERR_FILENO, ": not found\n", 12);
 }
 
 /**
