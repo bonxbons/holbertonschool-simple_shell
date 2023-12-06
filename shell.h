@@ -37,4 +37,7 @@ void signal_handle(int sign);
 int main(int __attribute__((unused)) argc, char **argv, char **env);
 void end_file(char *buffer);
 void fork_fail(void);
+void build_message(char **av, char *first_com, int count);
+int _puterror(char c);
+
 #endif
