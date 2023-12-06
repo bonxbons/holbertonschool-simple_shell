@@ -1,5 +1,29 @@
 #include "shell.h"
 /**
+ * find_num - function to find the total number of directories
+ * @path: path string
+ * return: the number of directories in the path
+ */
+unsigned int find_num(char *path)
+{
+	unsigned int i = 0, flag = 0, find_num = 0;
+
+	while (path[i])
+	{
+		if (path[i] != ':')
+			flag = 1;
+		if ((flag && path[i + 1] == ':') || (flag && path[i + 1] == '\0'))
+		{
+			find_num++;
+			flag = 0;
+		}
+		i++;
+	}
+
+	return (find_num);
+}
+
+/**
  * _getenv - function that will get the enviroment variable
  * @name: the name of the enviroment variable
  * @env: enviroment variable
