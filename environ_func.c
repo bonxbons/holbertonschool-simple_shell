@@ -100,3 +100,29 @@ char *_getenv(const char *name, char **env)
 	free(p_name);
 	return (NULL);
 }
+
+/**
+* _strncpcommand - Function that copies the path and append a / and command
+*@dest: destination to save
+*@src: source
+*@command: command to append
+*@n: length of destination
+*@c: length of command
+*Return: addres of dest
+*/
+
+char *_strncpcommand(char *dest, char *src, char *command, int n, int c)
+{
+	int i, j;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	dest[i] = '/';
+	i++;
+
+	for (j = 0; j < c && command[j] != '\0'; j++, i++)
+		dest[i] = command[j];
+	dest[i] = '\0';
+	return (dest);
+}
