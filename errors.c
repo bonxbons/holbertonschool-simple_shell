@@ -47,3 +47,13 @@ void build_message(char **av, char *first_com, int count)
 	write(STDERR_FILENO, first_com, _strlen(first_com));
 	wrtie(STDERR_FILENO, ": not found\n", 12);
 }
+
+/**
+ * _puterror - prints a character
+ * @c: chracter to write
+ * return: int to print
+ */
+int _puterror(char c)
+{
+	return(write(STDERR_FILENO, &c, 1));
+}
