@@ -70,3 +70,15 @@ it will return the argument.
 User's login directory
 .sp
 .IP PATH
+The default search path for executables
+.sp
+.IP PS1
+The primary prompt string, which defaults to “$ ”
+.SH FILES
+.SH HISTORY
+.SH BUGS
+.ip Expansions work once per stdin read only
+.SH AUTHORS
+Ivonne Lopez and Jordan Arguelles
+.SH SEE ALSO
+.BR sh (1)
