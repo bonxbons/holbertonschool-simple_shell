@@ -49,20 +49,22 @@ void build_message(char **av, char *first_com, int count)
 }
 
 /**
- * _puterror - prints a character
- * @c: chracter to write
- * return: int to print
- */
+* _puterror - Prints a char
+*@c: character to write
+*Return: int to print
+*/
+
 int _puterror(char c)
 {
-	return(write(STDERR_FILENO, &c, 1));
+	return (write(STDERR_FILENO, &c, 1));
 }
 
 /**
- * end_file - function to control the interrupt signal
- * @buffer: buffer array created by new line
- * return: nothing
- */
+* end_file - function to control the interrupt signal
+*@buffer: buffer array created by new line
+*Return: Nothing(void)
+*/
+
 void end_file(char *buffer)
 {
 	if (isatty(STDIN_FILENO))
