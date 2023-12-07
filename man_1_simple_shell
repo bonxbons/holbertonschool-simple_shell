@@ -40,3 +40,20 @@ Unsets an environmental varibale of name [variable]
 .sp
 .IP "-setenv [key] [value]"
 .sp
+Set a local environmental variable with key-value pair. If key already exists, this
+action will replace the existing key with new value.
+.sp
+.IP "-cd [directory]"
+.sp
+Change working current directory to target directory. If "-" is inputted as second
+argument, it will change to last working directory. If ".." is inputted, it will
+take user to parent directory. If input is omitted, then user is take to $HOME.
+.sp
+.IP "-alias"
+.sp
+Work in progress in current version.
+.sp
+.IP "-history"
+.sp
+Work in progress in current version.
+.sp
