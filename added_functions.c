@@ -27,3 +27,19 @@ void get_out(char *buffer, char **commands)
 }
 
 /**
+* env_end - Function to frees the buffer and commands created in getline
+*@buffer: buffer from getline
+*@commands: array store commands
+*@env: enviroment variables
+*Return: Nothing(void)
+*/
+
+void env_end(char *buffer, char **commands, char **env)
+{
+	free(buffer);
+	freearv(commands);
+	print_env(env);
+	exit(EXIT_SUCCESS);
+}
+
+/**
