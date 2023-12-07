@@ -77,17 +77,14 @@ char *_getenv(const char *name, char **environ)
 	char *env_value, *cp_name;
 	unsigned int i = 0, length;
 
-	/* find the length of the argument and malloc space for it */
 	length = _strlen_const(name);
 
 	cp_name = malloc(sizeof(char) * (length + 1));
 	if (cp_name == NULL)
 		return (NULL);
 
-	/* copy the contents of the name argument to cp_name */
 	_strncpyconst(cp_name, name, length);
 
-	/* finding the environment variable */
 	while (environ[i])
 	{
 		env_value = strtok(environ[i], "=");
