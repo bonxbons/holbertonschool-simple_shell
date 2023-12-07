@@ -32,7 +32,7 @@ unsigned int find_num(char *path)
  * @environ: environment variables
  * Return: environment
  */
-char **store_e_variables(char *fir_com, char **environ)
+char **store_e_variables(char *first_com, char **environ)
 {
 	char **directories, *path_env, *directory;
 	unsigned int length, i = 0;
@@ -56,7 +56,7 @@ char **store_e_variables(char *fir_com, char **environ)
 			freearv(directories);
 			return (NULL);
 		}
-		_strncpcommand(directories[i], directory, fir_com, dir_length, command_length);
+		_strncpcommand(directories[i], directory, first_com, dir_length, command_length);
 		i++;
 		directory = strtok(NULL, ":");
 	}
