@@ -57,3 +57,16 @@ Work in progress in current version.
 .sp
 Work in progress in current version.
 .sp
+.SH EXIT STATUS
+.sp
+Errors that are detected by the shell, such as a syntax error, will cause the shell to
+exit with a non-zero exit status. Otherwise the shell will return the exit status of
+the last command executed, or if the exit builtin is used with a numeric argument,
+it will return the argument.
+.sp
+.SH ENVIRONMENT
+.sp
+.IP HOME
+User's login directory
+.sp
+.IP PATH
