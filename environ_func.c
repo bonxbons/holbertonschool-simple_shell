@@ -49,7 +49,7 @@ char **store_e_variables(char *first_com, char **environ)
 	while (directory != NULL)
 	{
 		dir_length = _strlen(directory);
-		command_length = _strlen(fir_com);
+		command_length = _strlen(first_com);
 		directories[i] = malloc(sizeof(char) * (dir_length + command_length + 2));
 		if (directories[i] == NULL)
 		{
