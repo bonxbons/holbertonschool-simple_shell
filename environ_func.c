@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
-* find_num - Function to find the total number of directories
+* find_num_dir - Function to find the total number of directories
 *@path: path string
 *Return: number of directories in the path
 */
-unsigned int find_num(char *path)
+unsigned int find_num_dir(char *path)
 {
 	unsigned int i = 0, flag = 0, num_dir = 0;
 
