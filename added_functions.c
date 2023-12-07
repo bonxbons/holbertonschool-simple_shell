@@ -65,7 +65,6 @@ void _path(char **commands, char *buffer, char **env, char **argv, int count)
 		i++;
 	}
 
-	/*if command not found print error*/
 	build_message(argv, commands[0], count);
 
 	free(buffer);
