@@ -17,7 +17,6 @@ void execute(char **commands, char *buffer, char **env,
 		char **argv, int count);
 void freearv(char **arv);
 void setfree(char *buffer, char **commands);
-int countstr(char *str);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
