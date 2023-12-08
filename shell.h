@@ -30,7 +30,7 @@ void env_get(char *buffer, char **commands, char **env);
 unsigned int command_length(char *string);
 void null_command(char *buffer);
 void env_end(char *buffer, char **commands, char **env);
-void _path(char **commands, char *buffer, char **env, char **argv, int count);
+void _path(char **commands, char *buffer, char **environ, char **argv, int count);
 void signal_handle(int sign);
 int main(int __attribute__((unused)) argc, char **argv, char **env);
 void end_file(char *buffer);
