@@ -57,7 +57,7 @@ void _path(char **commands, char *buffer, char **environ, char **argv, int count
 	int i = 0;
 	char **directories;
 
-	directories = store_e_variables(commands[0], env);
+	directories = store_e_variables(commands[0], environ);
 	while (directories[i])
 	{
 		if (stat(directories[i], &fileStat2) == 0)
