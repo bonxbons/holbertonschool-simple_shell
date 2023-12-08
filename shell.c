@@ -94,7 +94,7 @@ void signal_handle(int sign)
  *
  * Return: 0 on success or 1 if error
  */
-int main(int __attribute__((unused)) argc, char **argv, char **env)
+int main(int __attribute__((unused)) argc, char **argv, char **environ)
 {
 	size_t len = 0;
 	ssize_t chars;
@@ -115,7 +115,7 @@ int main(int __attribute__((unused)) argc, char **argv, char **env)
 		if (pid == -1)
 			fork_fail();
 		if (pid == 0)
-			execute(tokens, line, env, argv, i);
+			execute(tokens, line, environ, argv, i);
 		else
 		{
 			wait(&status);
