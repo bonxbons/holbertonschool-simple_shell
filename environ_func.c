@@ -85,16 +85,16 @@ char *_getenv(const char *name, char **environ)
 
 	_strncpyconst(cp_name, name, length);
 
+	env_value = strtok(environ[i], "=");
 	while (environ[i])
 	{
-		env_value = strtok(environ[i], "=");
-		if (env_value != NULL && _strcmp(env_value, cp_name) == 0)
-		{
-			env_value = strtok(NULL, "\n");
+		if (_strcmp(env_value, cp_name))
+			{																																										env_value = strtok(NULL, "\n");
 			free(cp_name);
 			return (env_value);
 		}
 		i++;
+		env_value = strtok(environ[i], "=");
 	}
 	free(cp_name);
 	return (NULL);
