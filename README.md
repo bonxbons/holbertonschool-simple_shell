@@ -11,4 +11,13 @@ How Simple Shell works
 
 ## The simple shell accepts user commands, parses them to identify the executable and arguments, and then executes the commands. It checks for built-in commands, such as 'cd' or 'exit,' and executes them directly. For non-built-in commands, the shell searches for the executable in system directories, executes the command, and displays the output.
 
+## Instruction
+
+```
+1. git clone https://github.com/bonxbons/holbertonschool-simple_shell.git
+
+2. cd holbertonschool-simple_shell
+
+3. gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -ggdb3 *.c -o hsh
+``` 
 ![image](https://github.com/bonxbons/holbertonschool-simple_shell/assets/144151209/b1ec1475-855e-450c-83d1-8a0c4cc9e303)
