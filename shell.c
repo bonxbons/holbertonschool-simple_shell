@@ -124,7 +124,7 @@ int main(int __attribute__((unused)) argc, char **argv, char **env)
 		len = 0, line = NULL;
 		prompt();
 	}
-if (chars == -1)
+	if (chars == -1)
 		return (EXIT_FAILURE);
 	return (EXIT_SUCCESS);
 }
