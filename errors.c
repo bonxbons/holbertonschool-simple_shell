@@ -6,7 +6,7 @@
  */
 void fork_fail(void)
 {
-	perror("Failed: ");
+	perror("Error: ");
 	exit(EXIT_FAILURE);
 }
 
