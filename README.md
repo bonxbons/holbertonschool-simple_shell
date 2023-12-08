@@ -14,6 +14,7 @@
 <h1 align="center">
   +ﾟ*｡:ﾟ+凸🌸 Instructions 🌸凸+ﾟ*｡:ﾟ+ 
 </h1>
+
 ````
 ☆彡   1.git clone https://github.com/bonxbons/holbertonschool-simple_shell.git
 
