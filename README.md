@@ -25,4 +25,5 @@
 ૮ ºﻌºა 4. Type "/hsh"
 ````
 
-![Brown Pastel Flowchart Diagram Graph Template-2](https://github.com/bonxbons/holbertonschool-simple_shell/assets/144151209/554f0fe0-9890-46d6-ac7c-775051f27d2f)
+![Brown Pastel Flowchart Diagram Graph Template-3](https://github.com/bonxbons/holbertonschool-simple_shell/assets/144151209/d5dafde1-85f1-488d-a816-e7f7cb2c1db6)
+
