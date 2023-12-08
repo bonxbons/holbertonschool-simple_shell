@@ -16,8 +16,8 @@
 ```
 1.☆彡git clone https://github.com/bonxbons/holbertonschool-simple_shell.git
 
-2. cd holbertonschool-simple_shell
+2.ʕ⁎̯͡⁎ʔcd holbertonschool-simple_shell
 
-3. gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -ggdb3 *.c -o hsh
+3.ʕ•ᴥ•ʔgcc -Wall -Werror -Wextra -pedantic -std=gnu89 -ggdb3 *.c -o hsh
 ``` 
 ![image](https://github.com/bonxbons/holbertonschool-simple_shell/assets/144151209/b1ec1475-855e-450c-83d1-8a0c4cc9e303)
