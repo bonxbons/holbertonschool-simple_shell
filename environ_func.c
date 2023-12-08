@@ -115,7 +115,7 @@ char *_strncpcommand(char *dest, char *src, char *command, int n, int c)
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
-	/* append "/" and "command" to the src */
+	
 	dest[i] = '/';
 	i++;
 
