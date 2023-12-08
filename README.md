@@ -5,6 +5,9 @@ Introduction to Simple Shell
 </h1>
 
 ## This is our Simple Shell project written in C, and our project was made to provide us with a better understanding of how a basic shell operates. Constructing our own shell involves exploring the basics like system calls, creating processes, and dealing with signals. As we dig into the details of understanding and running commands, our goal is to get a good handle on how users talk to the operating system. 
+<h1 align="center">
+How Simple Shell works
+</h1>
 
 ## The simple shell accepts user commands, parses them to identify the executable and arguments, and then executes the commands. It checks for built-in commands, such as 'cd' or 'exit,' and executes them directly. For non-built-in commands, the shell searches for the executable in system directories, executes the command, and displays the output.
 
