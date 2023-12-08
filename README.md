@@ -18,7 +18,7 @@
 
 ʕ⁎̯͡⁎ʔ  2.cd holbertonschool-simple_shell
 
-ʕ•ᴥ•ʔ 3.gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -ggdb3 *.c -o hsh
+ʕ•ᴥ•ʔ 3.gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 ૮ ºﻌºა 4. Type "/hsh"
 ``` 
