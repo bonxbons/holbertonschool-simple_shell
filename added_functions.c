@@ -51,7 +51,7 @@ void env_end(char *buffer, char **commands, char **env)
 *@count: number of times the prompt has been ran
 */
 
-void _path(char **commands, char *buffer, char **env, char **argv, int count)
+void _path(char **commands, char *buffer, char **environ, char **argv, int count)
 {
 	struct stat fileStat2;
 	int i = 0;
